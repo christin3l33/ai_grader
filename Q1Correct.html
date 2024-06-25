@@ -1,0 +1,16 @@
+{{ block title }}
+    Correct or Not
+{{ endblock }}
+
+{{ block content }}
+
+    {{ if player.q1_correct == 1 }}
+        Your code runs successfully. Continue to the AI Detection section.
+        {{ next_button }}
+    {{ elif player.q1_correct == 0 }}
+        Your code is incorrect. You will be receiving a score of 0.
+    {{ endif }}
+
+{{ endblock }}
+
+

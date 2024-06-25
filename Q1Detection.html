@@ -1,0 +1,21 @@
+{{ block title }}
+    You have been flagged for AI use
+{{ endblock }}
+
+{{ block content }}
+
+You have been suspected of using AI tools to answer Question 1. Please explain your code in detail.
+
+    {{ player.q1_mean_similarity }}
+    {{ player.q1_time_on_page }}
+    {{ player.q1_user_response }}
+
+Here is the AI response:
+
+{{ subsession.q1_gpt_response }}
+
+{{ formfields }}
+{{ next_button }}
+{{ endblock }}
+
+
