@@ -44,7 +44,7 @@ def generate_ai_code(player: Player):
 
     for question in all_questions:
         client = OpenAI(
-            api_key='sk-proj-FvgOHsfo2yveBzxyZoMqT3BlbkFJaMl8nT9W3CWsWR8wn6CF'
+            api_key='sk-proj-shpJF0wFDEy8eiBc46bqT3BlbkFJLhADrkkd8uBozwpEiKuA'
         )
 
         prompt = "Please only write the code; no explanation necessary.\n\n" + question
